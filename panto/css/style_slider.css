@@ -1,0 +1,288 @@
+.slick-list {
+	overflow: hidden;
+}
+
+.slick-track {
+	display: flex;
+	align-items: flex-start;
+}
+
+.slider {
+	min-width: 0;
+	position: relative;
+	padding: 20px 10px 30px 10px;
+}
+
+.slider_item {
+	margin: 20px;
+}
+
+.slider_up {
+	height: 240px;
+	background: #FAFAFA;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	position: relative;
+	margin-top: 20px;
+}
+
+.slider_img {
+	margin: auto;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: -20%;
+
+}
+
+.slider_text {
+	font-family: 'Inter';
+	font-weight: bold;
+	color: #0D1B39;
+	text-align: left;
+	font-size: 21px;
+	line-height: 26px;
+	padding: 13px 20px 27px 20px;
+	background: #FFFFFF;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+
+}
+
+.inter_reg {
+	font-size: 16px;
+	font-weight: normal;
+	color: #8D8D8D;
+}
+
+.inter_bold {
+	margin-bottom: 10px;
+}
+
+.stars {
+	font-size: 0;
+	display: inline-block;
+}
+
+.star {
+	display: none;
+}
+
+.star+label {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	background-image: url(../icons/big_star.svg);
+	background-repeat: no-repeat;
+	display: inline-block;
+	float: right;
+
+}
+
+.stars:not(:hover) .star:checked+label,
+:not(:hover) .star:checked+label~label,
+.star+label:hover,
+.star+label:hover~label {
+	background-image: url(../icons/big_star_check.svg);
+	background-repeat: no-repeat;
+}
+
+.stars {
+	margin-bottom: 20px;
+}
+
+.price {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.price_button {
+	width: 48px;
+	height: 48px;
+	background: #0D1B39;
+	border-radius: 31px;
+}
+
+/* Стрелка */
+.slider .slick-arrow {
+	position: absolute;
+	top: 40%;
+	z-index: 10;
+	font-size: 0;
+	width: 70px;
+	height: 50px;
+}
+
+.slider .slick-arrow.slick-prev {
+	left: 0;
+	background: url(../images/back.png) 0 0 / 100% no-repeat;
+
+}
+
+.slider .slick-arrow.slick-next {
+	right: 0;
+	background: url(../images/next.png) 0 0 / 100% no-repeat;
+}
+
+/* Слайдер с отзывами */
+.test_slider_item {
+	position: relative;
+}
+
+.test_slider_img {
+	border-radius: 20px;
+}
+
+.test_slider_img img {
+	border-radius: 20px;
+	width: 100%;
+}
+
+
+.test_slider_text {
+	margin: auto;
+	position: absolute;
+	bottom: 5%;
+	left: 0;
+	right: 0;
+	min-height: 206px;
+	width: 90%;
+	border-radius: 19px;
+	background: #fff;
+	color: #1E1E1E;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+
+.test_slider_text span {
+	display: block;
+}
+
+.name {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 21px;
+	text-transform: capitalize;
+	margin-top: 30px;
+}
+
+.surmname {
+	font-size: 12px;
+	line-height: 14px;
+	opacity: 0.6;
+
+}
+
+.comment {
+	max-width: 252px;
+	line-height: 16px;
+	opacity: 0.8;
+	margin: 10px 0;
+}
+
+.circle {
+	position: absolute;
+	top: -15%;
+	margin: 0 auto;
+	right: 0;
+	left: 0;
+	display: inline-block;
+	height: 66px;
+	width: 66px;
+	background: #fff;
+	border-radius: 50%;
+}
+
+.circle img {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin: 8px;
+	box-shadow: 0 9px 10px rgb(0 0 0 / 25%);
+}
+
+@media (max-width:420px) {
+	.test_slider_text {
+		min-height: 180px;
+	}
+
+	.comment {
+		margin: 0;
+	}
+}
+
+.slick-list .test_slider {
+	overflow: hidden;
+}
+
+.test_slider {
+	position: relative;
+	padding: 20px 10px 30px 10px;
+
+}
+
+.test_slider_item {
+	margin: 20px;
+}
+
+.test_slider_text .stars {
+	margin-bottom: 5px;
+}
+
+.star_small {
+	display: none;
+}
+
+.star_small+label {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	background-image: url(../icons/star_small.svg);
+	background-repeat: no-repeat;
+	display: inline-block;
+	float: right;
+
+}
+
+.stars:not(:hover) .star_small:checked+label,
+:not(:hover) .star_small:checked+label~label,
+.star_small+label:hover,
+.star_small+label:hover~label {
+	background-image: url(../icons/star_small_check.svg);
+	background-repeat: no-repeat;
+}
+
+.test_slider .slick-arrow {
+	position: absolute;
+	top: 30%;
+	z-index: 10;
+	font-size: 0;
+	width: 70px;
+	height: 50px;
+}
+
+/* Стрелка влево */
+.test_slider .slick-arrow.slick-prev {
+	left: 0;
+	background: url(../images/back.png) 0 0 / 100% no-repeat;
+
+}
+
+/* Стрелка вправо */
+.test_slider .slick-arrow.slick-next {
+	right: 0;
+	background: url(../images/next.png) 0 0 / 100% no-repeat;
+}
+
+@media (max-width:330px) {
+	.test_slider .slick-arrow {
+		top: 27%;
+	}
+}
